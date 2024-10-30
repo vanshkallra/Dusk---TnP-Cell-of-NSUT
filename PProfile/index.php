@@ -62,7 +62,7 @@
 			<p>Can't Access Account? <strong><a href="Forgot Password.php" class="blue-text">Reset Password</a></strong></p>
 		</div>
 		<!--Footer-->
-		<div class="footer">
+		<!-- <div class="footer">
 			<div class="container">
 				<div class="col-md-3 ftr_navi ftr">
 					<h3>NAVIGATION</h3>
@@ -117,6 +117,6 @@
 				</div>
 				</div>
 				
-			</div>
+			</div> -->
 	</body>
 </html>

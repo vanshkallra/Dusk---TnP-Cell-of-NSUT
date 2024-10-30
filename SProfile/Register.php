@@ -41,7 +41,7 @@
 				<div class="form-group">
 	        		<div class="input-group">
 		        		<div class="input-group-addon"><i class="fa fa-user fa-fw"></i></div>
-		              	<input type="text" name="USN" class="form-control" placeholder="USN*" >
+		              	<input type="text" name="USN" class="form-control" placeholder="Roll No.*" >
 		          	</div>
 	        	</div>
 	        	<div class="form-group">

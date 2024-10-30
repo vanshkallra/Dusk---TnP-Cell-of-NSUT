@@ -76,7 +76,7 @@
 			<p>Can't Access Account? <strong><a href="Forgot Password.php" class="blue-text">Reset Password</a></strong></p>
 		</div>
 		<!--Footer-->
-		<div class="footer">
+		<!-- <div class="footer">
 			<div class="container">
 				<div class="col-md-3 ftr_navi ftr">
 					<h3>NAVIGATION</h3>
@@ -120,7 +120,7 @@
 				</div>
 				<div class="col-md-3 get_in_touch ftr">
 					<h3>GET IN TOUCH</h3>
-					<!-- <p>NH4, Herur</p> -->
+					<p>NH4, Herur</p>
 					<p>South kalamessery,Kochi, India</p>
 					<p>08301-79790/223365</p>
 					<a href="mailto:soumen1696@gmail.com">soumen1696@gmail.com</a>
@@ -131,6 +131,6 @@
 				</div>
 				</div>
 
-			</div>
+			</div> -->
 	</body>
 </html>

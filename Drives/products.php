@@ -4,7 +4,7 @@
 		<!--favicon-->
 		<link rel="shortcut icon" href="favicon.ico" type="image/icon">
 		<link rel="icon" href="favicon.ico" type="image/icon">
-		<title>CUSAT-SOE | Campus Drives</title>
+		<title>NSUT | Campus Drives</title>
 		<meta name="viewport"
 		content="width=device-width, initial-scale=1">
 		<meta http-equiv="Content-Type" content="text/php; charset=utf-8" />
@@ -60,7 +60,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<ul class="nav1">
 							
 							<li class="hvr-sweep-to-bottom">
-								<a href="../Homepage/index.php">CUSAT-SOE<i>Goto Placement Homepage</i></a>
+								<a href="../Homepage/index.php">Dusk NSUT<i>Goto Placement Homepage</i></a>
 							</li>
 							<li class="hvr-sweep-to-bottom">
 								<a href="index.php">Home<i>Get the Overview of the Site</i></a>
