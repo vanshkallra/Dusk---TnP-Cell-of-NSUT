@@ -42,13 +42,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</span>
 						<ul class="nav1">
 							<li class="hvr-sweep-to-bottom">
-								<a href="../Homepage/index.php">CUSAT-SOE<i>Goto Placement Homepage</i></a>
+								<a href="../Homepage/index.php">Dusk  NSUT<i>Go to Placement Homepage</i></a>
 							</li>
 							<li class="hvr-sweep-to-bottom active">
 								<a href="index.php">Home<i>Get the Overview of the Site</i></a>
 							</li>
 							<li class="hvr-sweep-to-bottom">
-								<a href="about.php">About<i>About Us and our Cheif Architects</i></a>
+								<a href="about.php">About<i>About Us and our Chief Architects</i></a>
 							</li>
 							<li class="hvr-sweep-to-bottom">
 								<a href="products.php">Campus Drives<i>Campus Drives</i></a>
@@ -102,8 +102,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<span>Passion</span>
 								</h2>
 								<div class="line"></div>
-								<p>Hold back, Our Training and Activities will get Your Script away from Your Laziness. We Dream with You to take You into the
-									Reality of it. Just be Interactive and Initiate yourself to the Next Level of Placement Training</p>
+								<p></p>
 							</div>
 						</li>
 						<li>
@@ -265,18 +264,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-3 footer-middle wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 					<h3>Address</h3>
 					<div class="address">
-						<p>CUSAT, South Kalamessery
-							<span>Kochi,Kerala</span>
+						<p>Academic Section, NSUT Sector 3
+						Dwarka, New Delhi-110078
 						</p>
 					</div>
 					<div class="phone">
-						<p>+91 830 1979790/223365</p>
+						<p>+011-25000268</p>
 					</div>
 				</div>
 				<div class="col-md-3 footer-right  wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-					<h6 style="color: white">Cochin University Of Science And Technology</h6>
+					<h6 style="color: white">Netaji Subhas University of Technology</h6>
 					<h4>
-						<a href="../Homepage/index.php" style="color: white">Placement Management System</a>
+						<a href="../Homepage/index.php" style="color: white">Dusk</a>
 					</h4>
 					<p></p>
 				</div>

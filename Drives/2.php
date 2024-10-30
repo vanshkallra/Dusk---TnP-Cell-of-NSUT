@@ -39,7 +39,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<span class="menu"><img src="images/menu.png" alt=""></span>
 					<ul class="nav1">
 						<li class="hvr-sweep-to-bottom">
-								<a href="../Homepage/index.php">CIT-PMS<i>Goto Placement Homepage</i></a>
+								<a href="../Homepage/index.php">NSUT<i>Goto Placement Homepage</i></a>
 							</li>
 						<li class="hvr-sweep-to-bottom">
 								<a href="index.php">Home<i>Get the Overview of the Site</i></a>
@@ -88,7 +88,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="jumbotron banner-bottom-left wow fadeInLeft animated animated" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s;">
 					  <h3>Placement and Training Department</h3>
 						<h5></span></h5>
-						<p>Our Institute is located near Tumkur, a well known place of learning. Our college is affiliated to Visvesvaraya Technological University, Belgaum (Karnataka), recognized by AICTE, New Delhi, & by Government of Karnataka. Within a short span of 10 years we have made our presence felt strongly in this competitive educational sector and we have many firsts to our credit. Our ISO Certification and NBA Accreditation speak of our commitment to quality systems and education. Our credentials are well appreciated by many industries, engineering institutes, professional bodies, government organizations etc. In the recent past our institute has been rated A Grade and is included among “THE BEST ENGINEERING COLLEGES IN INDIA” by Career360, a popular magazine promoted by OUTLOOK Group. 
+						<p>Netaji Subhas University of Technology (NSUT) is a premier technical university located in New Delhi, India, renowned for its commitment to excellence in engineering, technology, and research. Originally founded in 1983 as the Delhi Institute of Technology, NSUT has grown into a distinguished institution, fostering innovation, leadership, and academic rigor. With a highly accomplished faculty, cutting-edge laboratories, and a vibrant campus community, NSUT offers a broad range of undergraduate, postgraduate, and doctoral programs in fields such as computer science, electronics, information technology, and mechanical engineering. NSUT is dedicated to creating a dynamic learning environment that not only emphasizes technical expertise but also encourages entrepreneurship, interdisciplinary research, and global perspectives. Empowering students to meet and shape the demands of an ever-evolving world, NSUT stands as a beacon of knowledge, skill, and opportunity for aspiring engineers and researchers across the nation and beyond.
 						</p>
 					</div>
 					
@@ -111,7 +111,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="jumbotron banner-bottom-left wow fadeInLeft animated animated" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s;">
 					  
 						<h5></span></h5>
-						<p>Our Institute is located near Tumkur, a well known place of learning. Our college is affiliated to Visvesvaraya Technological University, Belgaum (Karnataka), recognized by AICTE, New Delhi, & by Government of Karnataka. Within a short span of 10 years we have made our presence felt strongly in this competitive educational sector and we have many firsts to our credit. Our ISO Certification and NBA Accreditation speak of our commitment to quality systems and education. Our credentials are well appreciated by many industries, engineering institutes, professional bodies, government organizations etc. In the recent past our institute has been rated A Grade and is included among “THE BEST ENGINEERING COLLEGES IN INDIA” by Career360, a popular magazine promoted by OUTLOOK Group. 
+						<p>Netaji Subhas University of Technology (NSUT) is a premier technical university located in New Delhi, India, renowned for its commitment to excellence in engineering, technology, and research. Originally founded in 1983 as the Delhi Institute of Technology, NSUT has grown into a distinguished institution, fostering innovation, leadership, and academic rigor. With a highly accomplished faculty, cutting-edge laboratories, and a vibrant campus community, NSUT offers a broad range of undergraduate, postgraduate, and doctoral programs in fields such as computer science, electronics, information technology, and mechanical engineering. NSUT is dedicated to creating a dynamic learning environment that not only emphasizes technical expertise but also encourages entrepreneurship, interdisciplinary research, and global perspectives. Empowering students to meet and shape the demands of an ever-evolving world, NSUT stands as a beacon of knowledge, skill, and opportunity for aspiring engineers and researchers across the nation and beyond.
 						</p>
 					</div>
 					

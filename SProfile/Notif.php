@@ -87,7 +87,7 @@
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
                 <li>
-                  <a href="../../Homepage/index.php" >Home CUSAT-SOE</a>
+                  <a href="../../Homepage/index.php" >Home</a>
                 </li>
                 <li>
                   <a href="">Drives Homepage</a>
@@ -107,8 +107,7 @@
             <h1><center>Department Messages</center></h1>
           </div>
           <footer class="text-right">
-          		<p>Copyright &copy; 2018 CUSAT-SOE | Developed by
-              <a href="http://znumerique.azurewebsites.net" target="_parent">HyperMine </a>
+          		<p>Copyright &copy; 2024 Dusk
 			  </p>
           </footer>
         </div>

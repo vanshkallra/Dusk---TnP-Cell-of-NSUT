@@ -88,7 +88,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="jumbotron banner-bottom-left wow fadeInLeft animated animated" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s;">
 					  <h3>Placement and Training Department</h3>
 						<h5></span></h5>
-						<p>Our Institute is located near South Kalamessery, a well known place of learning. Our college is affiliated to Cochin University Of Science And Technological University, Kochi (Kerala), recognized by AICTE, New Delhi, & by Government of Kerala. Within a short span of 47 years we have made our presence felt strongly in this competitive educational sector and we have many firsts to our credit. Our ISO Certification and NBA Accreditation speak of our commitment to quality systems and education. Our credentials are well appreciated by many industries, engineering institutes, professional bodies, government organizations etc. In the recent past our institute has been rated A Grade and is included among “THE BEST ENGINEERING COLLEGES IN INDIA” by Career360, a popular magazine promoted by OUTLOOK Group. 
+						<p>Netaji Subhas University of Technology (NSUT) is a premier technical university located in New Delhi, India, renowned for its commitment to excellence in engineering, technology, and research. Originally founded in 1983 as the Delhi Institute of Technology, NSUT has grown into a distinguished institution, fostering innovation, leadership, and academic rigor. With a highly accomplished faculty, cutting-edge laboratories, and a vibrant campus community, NSUT offers a broad range of undergraduate, postgraduate, and doctoral programs in fields such as computer science, electronics, information technology, and mechanical engineering. NSUT is dedicated to creating a dynamic learning environment that not only emphasizes technical expertise but also encourages entrepreneurship, interdisciplinary research, and global perspectives. Empowering students to meet and shape the demands of an ever-evolving world, NSUT stands as a beacon of knowledge, skill, and opportunity for aspiring engineers and researchers across the nation and beyond.
 						</p>
 					</div>
 					
@@ -111,7 +111,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="jumbotron banner-bottom-left wow fadeInLeft animated animated" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s;">
 					  
 						<h5></span></h5>
-						<p>Our Institute is located near South Kalamessery, a well known place of learning. Our college is affiliated to Cochin University Of Science And Technology, Ernakulam (Kerala), recognized by AICTE, New Delhi, & by Government of Kerala. Within a short span of 10 years we have made our presence felt strongly in this competitive educational sector and we have many firsts to our credit. Our ISO Certification and NBA Accreditation speak of our commitment to quality systems and education. Our credentials are well appreciated by many industries, engineering institutes, professional bodies, government organizations etc. In the recent past our institute has been rated A Grade and is included among “THE BEST ENGINEERING COLLEGES IN INDIA” by Career360, a popular magazine promoted by OUTLOOK Group. 
+						<p>Netaji Subhas University of Technology (NSUT) is a premier technical university located in New Delhi, India, renowned for its commitment to excellence in engineering, technology, and research. Originally founded in 1983 as the Delhi Institute of Technology, NSUT has grown into a distinguished institution, fostering innovation, leadership, and academic rigor. With a highly accomplished faculty, cutting-edge laboratories, and a vibrant campus community, NSUT offers a broad range of undergraduate, postgraduate, and doctoral programs in fields such as computer science, electronics, information technology, and mechanical engineering. NSUT is dedicated to creating a dynamic learning environment that not only emphasizes technical expertise but also encourages entrepreneurship, interdisciplinary research, and global perspectives. Empowering students to meet and shape the demands of an ever-evolving world, NSUT stands as a beacon of knowledge, skill, and opportunity for aspiring engineers and researchers across the nation and beyond.
 						</p>
 					</div>
 					
@@ -161,8 +161,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-3 footer-middle wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 					<h3>Address</h3>
 					<div class="address">
-						<p>CUSAT, UHRA 
-							<span>South Kalamessey,Kochi</span>
+						<p>NSUT
+							<span>Dwarka Sec-3</span>
 						</p>
 					</div>
 					<div class="phone">
@@ -170,7 +170,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 				</div>
 				<div class="col-md-3 footer-right  wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-					<h6 style="color: white">Cochin University Of Science And  Technology</h6>
+					<h6 style="color: white">NSUT</h6>
 					<h4>
 						<a href="../Homepage/index.php" style="color: white">Placement Management System</a>
 					</h4>
@@ -185,8 +185,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- container -->
 			<div class="container">
 				<div class="copyright-left wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-					 <p>Copyright &copy; 2018 CUSAT-SOE | Developed by
-              <a href="http://znumerique.azurewebsites.net" target="_parent">HyperMine Technologies</a>
+					 <p>Copyright &copy; 2024 Dusk
 				</div>
 				<div class="copyright-right wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 					<ul>

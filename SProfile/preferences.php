@@ -87,7 +87,7 @@
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
                 <li>
-                  <a href="../../Homepage/index.html" >Home CUSAT-SOE</a>
+                  <a href="../../Homepage/index.html" >Home</a>
                 </li>
                 <li>
                   <a href="">Drives Homepage</a>
@@ -96,7 +96,7 @@
                   <a href="">Overview</a>
                 </li>
                 <li>
-                  <a href="login.html">Change Password</a>
+                  <a href="login.php">Change Password</a>
                 </li>
               </ul>
             </nav>
@@ -119,7 +119,7 @@
 
 				<div class="col-lg-6 col-md-6 form-group">
                   <label for="usn">USN</label>
-                  <input type="text" name="USN" class="form-control" id="usn" placeholder="1CG12IS000" >
+                  <input type="text" name="USN" class="form-control" id="usn" placeholder="2023UCM2372" >
                 </div>
 
 				<div class="col-lg-6 col-md-6 form-group">
@@ -166,7 +166,7 @@
                   </select>
                 </div>
 				<div class="col-lg-6 col-md-6 form-group">
-                  <label for="sslc">SSLC/10th Aggregate</label>
+                  <label for="sslc">10th Aggregate</label>
                   <input type="text" name="Percentage" class="form-control" id="sslc" placeholder="">
                 </div>
 				<div class="col-lg-6 col-md-6 form-group">
@@ -232,8 +232,7 @@
             </form>
           </div>
           <footer class="text-right">
-           		<p>Copyright &copy; 2018 CUSAT-SOE | Developed by
-              <a href="http://znumerique.azurewebsites.net" target="_parent">HyperMine </a>
+           		<p>Copyright &copy; 2024 Dusk
 			  </p>
           </footer>
         </div>

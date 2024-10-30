@@ -82,10 +82,10 @@
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
                 <li>
-                  <a href="../../Homepage/index.php">Home CUSAT-SOE</a>
+                  <a href="../../tnp-dusk/Homepage/index.php">Home NSUT</a>
                 </li>
                 <li>
-                  <a href="../../Drives/index.php">Drives Homepage</a>
+                  <a href="../../tnp-dusk/Drives/index.php">Drives Homepage</a>
                 </li>
                 <li>
                   <a href="Notif.php">Notifications</a>
@@ -102,7 +102,7 @@
             <div class="templatemo-content-widget white-bg col-2">
               <i class="fa fa-times"></i>
               <div class="square"></div>
-              <h2 class="templatemo-inline-block">Welcome to CUSAT-SOE</h2>
+              <h2 class="templatemo-inline-block">Welcome!</h2>
               <hr>
               <p>Work is Magic and it defines you at every aspect of ur life. As you Work Hard u will become smart and the Irony is Every Smart worker will be a Successfull man where as worthless hardwork is like a monkey finding gold in a sea.
                 <a href="preferences.php""
@@ -222,8 +222,7 @@
           </div>
           <!-- Second row ends -->
           <footer class="text-right">
-            		<p>Copyright &copy; 2018 CUSAT-SOE | Developed by
-              <a href="http://znumerique.azurewebsites.net" target="_parent">HyperMine </a>
+            		<p>Copyright &copy; 2024 Dusk
 			  </p>
           </footer>
         </div>

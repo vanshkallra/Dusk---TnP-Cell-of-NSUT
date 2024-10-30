@@ -23,7 +23,7 @@
 			}
 			if ($username==$dbusername&& $password==$dbpassword)
 			{
-				  echo "<center>Login Successfull..!! <br/>Redirecting you to HomePage! </br>If not Goto <a href='index.php'> Here </a></center>";
+				  echo "<center>Login Successful..!! <br/>Redirecting you to HomePage! </br>If not Go to <a href='index.php'> Here </a></center>";
 			  echo "<meta http-equiv='refresh' content ='3; url=index.php'>";
 				$_SESSION['username'] = $username;
 				//$_SESSION['Name'] = mysql_query("SELECT Name FROM slogin WHERE USN='$username'");

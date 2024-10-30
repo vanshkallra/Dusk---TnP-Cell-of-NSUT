@@ -5,7 +5,7 @@
 	<!--favicon-->
 		<link rel="shortcut icon" href="favicon.ico" type="image/icon">
 		<link rel="icon" href="favicon.ico" type="image/icon">
-<title>CUSAT-SOE | Contact Us</title>
+<title>Dusk NSUT | Contact Us</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Tillage Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
@@ -40,7 +40,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<span class="menu"><img src="images/menu.png" alt=""></span>
 					<ul class="nav1">
 						<li class="hvr-sweep-to-bottom">
-								<a href="../Homepage/index.php">CUSAT-SOE<i>Goto Placement Homepage</i></a>
+								<a href="../Homepage/index.php">Home<i>Go to Placement Homepage</i></a>
 							</li>
 						<li class="hvr-sweep-to-bottom">
 								<a href="index.php">Home<i>Get the Overview of the Site</i></a>
@@ -77,21 +77,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!-- container -->
 		<div class="container">
 			<div class="map footer-middle wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.666684800831!2d76.3260397509554!3d10.044339274988525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c377917e985%3A0xb0fd4b1e85a6e51f!2sCochin+University+of+Science+and+Technology!5e0!3m2!1sen!2sin!4v1542048085410" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28021.023252964736!2d77.00240421083987!3d28.610937500000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05dd375e5a13%3A0x108adaa3abe4bd07!2sNetaji%20Subhas%20University%20of%20Technology!5e0!3m2!1sen!2sin!4v1730308164623!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 			<div class="mail-grids">
 				<div class="col-md-6 mail-grid-left wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 					<h3>Contact Us</h3>	
 					<p></p>				
-					<h4>Cochin University Of Science And  Technology</h4>
-					<p>South Kalamessery,
-						<span>Kochi, Kerala</span>
-						India IN-682 022
+					<h4>Netaji Subhas University of Technology</h4>
+					<p>Dwarka, Sec-3
+						<span>New Delhi- 110078</span>
+						India
 					</p>
 					<h4>Get In Touch</h4>
-					<p>Telephone: +91 830-1979790/223365
-						<span>FAX: +91 830-1979790</span>
-						E-mail: <a href="mailto:soumen1696@gmail.com">soumen1696@gmail.com</a>
+					<p>Landline No: 011-25000268</p>
+					<p>	E-mail: <a href="mailto:academic@nsut.ac.in">academic@nsut.ac.in</a>
 					</p>
 				</div>
 				<div class="col-md-6 contact-form wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
@@ -139,8 +138,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-3 footer-middle wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 					<h3>Address</h3>
 					<div class="address">
-						<p>CUSAT-SOE
-							<span>South Kalamessery, Kochi</span>
+						<p>NSUT
+							<span>Dwarka, Sec-3 Delhi</span>
 						</p>
 					</div>
 					<div class="phone">
@@ -148,9 +147,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 				</div>
 				<div class="col-md-3 footer-right  wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-					<h6 style="color: white">Cochin University Of Science And  Technology</h6>
+					<h6 style="color: white">Netaji Subhas University of Technology</h6>
 					<h4>
-						<a href="../Homepage/index.php" style="color: white">Placement Management System</a>
+						<a href="../Homepage/index.php" style="color: white">Dusk- TnP Cell of NSUT</a>
 					</h4>
 					<p></p>
 				</div>
@@ -163,8 +162,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- container -->
 			<div class="container">
 				<div class="copyright-left wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-					 <p>Copyright &copy; 2018 CUSAT-SOE | Developed by
-              <a href="http://znumerique.azurewebsites.net" target="_parent">HyperMine</a>
+					 <p>Copyright &copy; 2024 Dusk
 				</div>
 				<div class="copyright-right wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 					<ul>
@@ -181,7 +179,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<a href="#" class="twitter pinterest"> </a>
 						</li>
 						<li>
-							<a href="#" class="twitter linkedin"> </a>
+							<a href="https://www.linkedin.com/in/vansh-kalra-515565247" class="twitter linkedin"> </a>
 						</li>
 						<li>
 							<a href="#" class="twitter dribbble"> </a>

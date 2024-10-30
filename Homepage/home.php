@@ -9,7 +9,7 @@
         <meta name="author" content="">
         <!--favicon-->
         <link rel="shortcut icon" href="favicon.ico" type="image/icon">
-        <link rel="icon" href="favicon.ico" type="image/icon">
+        <!-- <link rel="icon" href="favicon.ico" type="image/icon"> -->
         <title>Dusk- NSUT</title>
         <!-- Bootstrap Core CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -72,10 +72,11 @@
         <header>
             <div class="header-content">
                 <div class="header-content-inner">
-                    <h1>PLACEMENT MANAGEMENT SYSTEM</h1>
+                    <h1>Dusk</h1>
+                    <h1 class="heading-name">The TnP Cell of NSUT</h1>
                     <hr>
-                    <p>We are here to Build your Skills and Career with our Driven Passion and Reality.</br>Click Below to Get Our Current Drive
-                        Details</p>
+                    <div class="tagline">NSUT (Previously NSIT) is an autonomous Institution under Govt. of NCT of Delhi and affiliated to University of Delhi, Netaji Subhas Institute of Technology is a seat of higher technical education in India. Established with the objective of meeting the growing demands of manpower in the emerging fields of engineering and technology, over a period of time, the institute has carved a niche for itself, both nationally and internationally, for excellence in technical education and research.<br>We are here to Build your Skills and Career with our Driven Passion and Reality.</br>Click Below to Get Our Current Drive
+                        Details</div>
                     <a href="../Drives/index.php" class="btn btn-primary btn-xl page-scroll">Current Drives</a>
                 </div>
             </div>
@@ -86,19 +87,19 @@
 					<h3>NAVIGATION</h3>
 					<ul>
 						<li>
-							<a href="../Homepage/index.php">Home</a>
+							<a href="../index.php">Home</a>
 						</li>
 						<li>
-							<a href="../Profilers/SProfile/index.php">Student Login</a>
+							<a href="../SProfile/index.php">Student Login</a>
 						</li>
 						<li>
-							<a href="../Profilers/PProfile/index.php">Placement Login</a>
+							<a href="../PProfile/index.php">Placement Login</a>
 						</li>
 						<li>
-							<a href="../Profilers/HODProfile/index.php">HOD Login</a>
+							<a href="../HODProfile/index.php">HOD Login</a>
 						</li>
 						<li>
-							<a href="../Profilers/Priprofile/index.php">Administrative Login</a>
+							<a href="../Priprofile/index.php">Administrative Login</a>
 						</li>
 					</ul>
 				</div>
@@ -124,14 +125,14 @@
 				</div>
 				<div class="col-md-3 get_in_touch ftr">
 					<h3>GET IN TOUCH</h3>
-					<p>University Hills</p>
-					<p>Kalamessery, Kochi, India</p>
-					<p>83019-79790/221456</p>
-					<a href="mailto:soumen1696@gmail.com">Soumen1696@gmail.com</a>
+					<p>NSUT</p>
+					<p>Academic Section, NSUT Sector 3
+                    Dwarka, New Delhi-110078</p>
+					<p>011-25000268</p>
+					<a href="mailto:academic@nsut.ac.in">academic@nsut.ac.in</a>
 				</div>
 				<div class="col-md-3 ftr-logo">
-					<p>Copyright &copy; 2018 CUSAT-SOE | Developed by
-              <a href="http://znumerique.azurewebsites.net" target="_parent">HyperMine Technologies</a>
+					<p>Copyright &copy; 2024 Dusk </p>
 				</div>
 				<div class="clearfix"></div>
 			</div>

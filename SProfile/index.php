@@ -38,7 +38,7 @@
 	        	<div class="form-group">
 	        		<div class="input-group">
 		        		<div class="input-group-addon"><i class="fa fa-user fa-fw"></i></div>	        		
-		              	<input type="text" class="form-control" placeholder="USN" name="username">           
+		              	<input type="text" class="form-control" placeholder="Roll No." name="username">           
 		          	</div>	
 	        	</div>
 	        	<div class="form-group">
@@ -64,8 +64,7 @@
         <div class="templatemo-content-widget templatemo-login-widget templatemo-register-widget white-bg">
 			<p>Can't Access Account? <strong><a href="Forgot Password.php" class="blue-text">Reset Password!</a></strong></p>
 		</div>
-		<!--Footer-->
-		<div class="footer">
+		<!-- <div class="footer">
 			<div class="container">
 				<div class="col-md-3 ftr_navi ftr">
 					<h3>NAVIGATION</h3>
@@ -119,7 +118,7 @@
               <a href="http://znumerique.azurewebsites.net" target="_parent">HyperMine</a>
 			  </p>
 				</div>
-				</div>
+				</div> -->
 				
 			</div>
 	</body>

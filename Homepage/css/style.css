@@ -42,16 +42,25 @@
 .ftr-logo {
   margin-top: 7em;
 }
-.get_in_touch h3,.ftr_navi h3{
+.get_in_touch h3, .ftr_navi h3{
 	  letter-spacing: 2px;
-	  font-family: 'Poiret One', cursive;
+	  /* font-family: 'Poiret One', cursive; */
   font-size: 1em;
   font-weight: 600;
   margin-bottom: 1em;
     color: #fff;
 }
+/* .get_in_touch h3{
+  color: #848484;
+  font-size: .125em;
+    padding: 0px 0;
+} */
+
+
+
 .get_in_touch p {
   color: #848484;
+  margin-bottom: 7px;
   font-size: .95em;
     padding: 0px 0;
 }

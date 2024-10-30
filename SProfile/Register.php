@@ -95,8 +95,11 @@
 		<div class="templatemo-content-widget templatemo-login-widget templatemo-register-widget white-bg">
 			<p>Have an Account? <strong><a href="index.php" class="blue-text">Sign in here!</a></strong></p>
 		</div>
+
+
+		
 		<!--footer-->
-		<div class="footer">
+		<!-- <div class="footer">
 			<div class="container">
 				<div class="col-md-3 ftr_navi ftr">
 					<h3>NAVIGATION</h3>
@@ -151,10 +154,11 @@
 				</div>
 				</div>
 				<div class="clearfix"></div>
-			</div>
+			</div> -->
 	</body>
 </html>
-<!--<
+
+<!-- <
 // define variables and set to empty values
 $nameErr = $usnErr = $passErr = $emailerr = $Qerr = $Anserr = "";
 $Name = $USN = $password = $repassword = $Email = $Question = $Answer = "";
@@ -253,4 +257,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 			$message = "This USN already exists/Dont Leave any Field Blank";
   			echo "<script type='text/javascript'>alert('$message');</script>";
 
-		}-->
+		} -->
