@@ -10,7 +10,7 @@
         <!--favicon-->
         <link rel="shortcut icon" href="favicon.ico" type="image/icon">
         <link rel="icon" href="favicon.ico" type="image/icon">
-        <title>CUSAT Home</title>
+        <title>Dusk- NSUT</title>
         <!-- Bootstrap Core CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
         <!-- Footer -->
@@ -45,22 +45,22 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand page-scroll" href="http://www.cusat.ac.in">Cochin University Of Science And  Technology</a>
+                    <a class="navbar-brand page-scroll" target ="_blank" href="http://nsut.ac.in/">Netaji Subhas University of Technology</a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a class="page-scroll" href="../Profilers/SProfile/index.php">Student Login</a>
+                            <a class="page-scroll" href="../SProfile/index.php">Student Login</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="../Profilers/HODProfile/index.php">HOD Login</a>
+                            <a class="page-scroll" href="../HODProfile/index.php">HOD Login</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="../Profilers/PProfile/index.php">Placement Login</a>
+                            <a class="page-scroll" href="../PProfile/index.php">Placement Login</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="../Profilers/PriProfile/index.php">Administrative Login</a>
+                            <a class="page-scroll" href="../PriProfile/index.php">Administrative Login</a>
                         </li>
                     </ul>
 

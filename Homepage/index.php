@@ -14,8 +14,8 @@
     margin-top: -100px;
     margin-left: -200px;">
 	<img src="images/wds.png"/>
-	<h1> Welcome to CUSAT</h1>
-	<h3> Advancing Placements </h3>
+	<h1> Welcome to Dusk</h1>
+	<h3> The Training and Placement Cell of NSUT</h3>
 	<h4> Please Wait While we Redirect you to our Page </h4>
 	<h6> Not Redirected?? <a href="home.php">Click Here</a></h6>
 	</div>

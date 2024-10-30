@@ -4,7 +4,8 @@
 
   }
    else {
-	   header("location: index.php");
+	  //  header("location: index.php");
+    header("location: tnp-dusk/SProfile/index.php");
   }
 ?>
 <!DOCTYPE html>

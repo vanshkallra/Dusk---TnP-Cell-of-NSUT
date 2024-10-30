@@ -179,7 +179,8 @@ header {
     min-height: auto;
     text-align: center;
     color: black;
-    background-image: url(../img/header.jpg);
+    /* background-image: url(../img/header.jpg); */
+    background-image: url(../img/homepage-bg-cool-vansh.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
