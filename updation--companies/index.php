@@ -37,7 +37,7 @@ if(isset($commit))
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Admin. Login</title>
+    <title>Admin Login</title>
 </head>
 <body>
 

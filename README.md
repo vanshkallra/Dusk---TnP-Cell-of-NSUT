@@ -55,12 +55,9 @@ $connect = mysqli_connect("localhost", "root","", "details");
   9. Ajax
   
 ## IDE & Tools
-  1. Visual Studio 2018 (PHP Tools Installed)
+  1. Visual Studio 2024 (PHP Tools Installed)
   2. Visual Studio Code (All Files Editing)
   3. XAMPP (Apache Server and MySQL)
-  4. LAMPP (Linux Apache and MySQL)
-  5. Atom Editor 
-* Atom Editor is Used Just to Edit the Code and To Test the PHP files We need to Use Apache Server and The Source Code Local Repo Must be in the XAMPP>htdocs>www folder
 
 
 ## It Contains 4 Portals and 2 Homepages:

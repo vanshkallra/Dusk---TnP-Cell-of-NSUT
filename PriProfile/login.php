@@ -94,7 +94,7 @@
             <div class="templatemo-content-widget white-bg col-2">
               <i class="fa fa-times"></i>
               <div class="square"></div>
-              <h2 class="templatemo-inline-block">Welcome to CUSAT-SOE</h2><hr>
+              <h2 class="templatemo-inline-block">Welcome to NSUT</h2><hr>
               <p>There is a worth for everything so do logging in here. The Use of this is, You can View Student details, Check their Eligibility Criteria and U cvan look up drive details</p>
               <p><a href="Students Eligibility.php">Check Students Eligibility</a></p>
 
