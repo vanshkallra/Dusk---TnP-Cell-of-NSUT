@@ -79,7 +79,7 @@
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-                  <li><a href="../../Homepage/indes.php">Home CUSAT-SOE</a></li>
+                  <li><a href="../../Homepage/index.php">Home</a></li>
                 <li><a href="">Drives Home</a></li>
                 <li><a href="Notif.php">Notifications</a></li>
                 <li><a href="Change Password.php">Change Password</a></li>
@@ -95,7 +95,7 @@
                 <i class="fa fa-times"></i>
                 <div class="media">
                   <div class="media-left">
-                    <a href="Placement Drives/addpdrive.php">
+                    <a href="../PProfile/Placement Drives/addpdrive.php">
                       <img class="media-object img-circle" src="images/sunset11.png" alt="Sunset" width="100px" height="100px">
                     </a>
                   </div>
@@ -164,8 +164,7 @@
             </div>
           </div>
           <footer class="text-right">
-            <p>Copyright &copy; 2018 CUSAT-SOE
-            | Designed by <a href="http://znumerique.azurewebsites.net" target="_parent">HyperMine</a></p>
+            <p>Copyright &copy; 2024 Dusk</p>
           </footer>
         </div>
       </div>

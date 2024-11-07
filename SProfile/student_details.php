@@ -72,10 +72,10 @@
               <a href="#"><i class="fa fa-bar-chart fa-fw"></i>Placement Drives</a>
             </li>
             <li>
-              <a href="#" class="active"><i class="fa fa-sliders fa-fw"></i>Preferences</a>
+              <a href="preferences.php"><i class="fa fa-sliders fa-fw"></i>Preferences</a>
             </li>
             <li>
-              <a href="student_details.php"><i class="fa fa-sliders fa-fw"></i>Add details</a>
+              <a href="#" class="active"><i class="fa fa-sliders fa-fw"></i>Add details</a>
             </li>
             <li>
               <a href="logout.php"><i class="fa fa-eject fa-fw"></i>Sign Out</a>
@@ -109,7 +109,7 @@
           <div class="templatemo-content-widget white-bg">
             <h2 class="margin-bottom-10">Preferences</h2>
             <p>Update Your Details</p>
-            <form action="pref.php" class="templatemo-login-form" method="post" enctype="multipart/form-data">
+            <form action="stud1.php" class="templatemo-login-form" method="post" enctype="multipart/form-data">
               <div class="row form-group">
                 <div class="col-lg-6 col-md-6 form-group">
                   <label for="inputFirstName">First Name</label>
@@ -173,11 +173,11 @@
                   <input type="text" name="Percentage" class="form-control" id="sslc" placeholder="">
                 </div>
 				<div class="col-lg-6 col-md-6 form-group">
-                  <label for="Pu">12th/Diploma Aggregate</label>
+                  <label for="Pu">12th Aggregate</label>
                   <input type="text" name="Puagg" class="form-control" id="Pu" placeholder="">
                 </div>
 				<div class="col-lg-6 col-md-6 form-group">
-                  <label for="BE">BE Aggregate</label>
+                  <label for="BE">CGPA</label>
                   <input type="text" name="Beagg" class="form-control" id="BE" placeholder="">
                 </div>
                 <div class="col-lg-6 col-md-6 form-group">
@@ -195,7 +195,7 @@
                     <option value="8">8</option>
                   </select>
                 </div>
-				<div class="col-lg-6 col-md-6 form-group">
+				<!-- <div class="col-lg-6 col-md-6 form-group">
                   <label class="control-label templatemo-block">History of Backlogs</label>
                   <select name="History" class="form-control">
                     <option value="Y/N">Y/N</option>
@@ -213,7 +213,7 @@
                     <option value="3">3</option>
                     <option value="4">4</option>
                   </select>
-                </div>
+                </div> -->
 
               </div>
               </div>

@@ -10,7 +10,7 @@
 <html lang="en">
   
   <head>
-    <!--favicon-->
+    <!-- favicon -->
         <link rel="shortcut icon" href="../favicon.ico" type="image/icon">
         <link rel="icon" href="../favicon.ico" type="image/icon">
       
@@ -27,12 +27,12 @@
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/templatemo-style.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    [if lt IE 9]>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    WARNING: Respond.js doesn't work if you view the page via file://
+    [if lt IE 9]> -->
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]
+    <!-- <![endif] -->
   </head>
   
   <body>
@@ -42,8 +42,8 @@
         <header class="templatemo-site-header">
           <div class="square"></div>
          <?php
-		  $Welcome = "Hello!!! How are You?";
-          echo "<h1>" . $Welcome . "<br>". $_SESSION['pusername']. "</h1>";
+		  // $Welcome = "Hello!!! How are You?";
+          // echo "<h1>" . $Welcome . "<br>". $_SESSION['pusername']. "</h1>";
 		  ?>
         </header>
         <div class="profile-photo-container">
@@ -71,7 +71,7 @@
           </ul>  
         </nav>
       </div>
-      <!-- Main content --> 
+      <!-- Main content  -->
       <div class="templatemo-content col-1 light-gray-bg">
         <div class="templatemo-top-nav-container">
           <div class="row">
@@ -89,7 +89,7 @@
           <div class="templatemo-content-widget white-bg">
             <h2 class="margin-bottom-10">ADD PLACEMENT DRIVE</h2>
             <p>Update drive</p>
-            <form action="add pdrive1.php" class="templatemo-login-form" method="POST" enctype="multipart/form-data">
+            <form action="add_pdrive_vansh.php" class="templatemo-login-form" method="POST" enctype="multipart/form-data">
               
 			  <div class="row form-group">
                 <div class="col-lg-6 col-md-6 form-group">
@@ -200,4 +200,14 @@
     <script type="text/javascript" src="js/templatemo-script.js"></script>
     <!-- Templatemo Script -->
   </body>
-</html>
+</html> -->
+
+<?php
+session_start();
+if (isset($_SESSION["pusername"]) && $_SESSION["pusername"]) {
+    // User is logged in
+} else {
+    header("Location: ../index.php");
+    exit();
+}
+?>

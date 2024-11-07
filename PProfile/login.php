@@ -60,7 +60,7 @@
         <nav class="templatemo-left-nav">
           <ul>
             <li><a href="#" class="active"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
-            <li><a href="Placement Drives.php"><i class="fa fa-home fa-fw"></i>Placement Drives</a></li>
+            <li><a href="Placement_drives.php"><i class="fa fa-home fa-fw"></i>Placement Drives</a></li>
             <li><a href="manage-users.php"><i class="fa fa-users fa-fw"></i>View Students</a></li>
             <li><a href="queries.php"><i class="fa fa-users fa-fw"></i>Queries</a></li>
             li><a href="Students Eligibility.php"><i class="fa fa-sliders fa-fw"></i>Students Eligibility Status</a></li>
@@ -74,7 +74,7 @@
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-               <li><a href="../../Homepage/index.php">Home CUSAT-SOE</a></li>
+               <li><a href="../../Homepage/index.php">Home</a></li>
                 <li><a href="../../Drives/index.php">Drives Home</a></li>
                 <li><a href="Notif.php">Notifications</a></li>
                 <li><a href="Change Password.php">Change Password</a></li>
@@ -87,9 +87,9 @@
             <div class="templatemo-content-widget white-bg col-2">
               <i class="fa fa-times"></i>
               <div class="square"></div>
-              <h2 class="templatemo-inline-block">Welcome to CUSAT-SOE</h2>
+              <h2 class="templatemo-inline-block">Welcome</h2>
               <p></p>
-              <p>Hello Officer! Have a great day with us! With CUSAT-SOE Account, You can add drives, Send Notifications and View the Eligibility Criteria of Students.</p>
+              <p>Hello Officer! Have a great day with us! , You can add drives, Send Notifications and View the Eligibility Criteria of Students.</p>
               <p>Hope you enjoy doing that. Greetings!!</p>
               <p><a href="Placement Drives.php">Placement Drives</a></p>
               <p><a href="manage-users.php">View Students</a></p>

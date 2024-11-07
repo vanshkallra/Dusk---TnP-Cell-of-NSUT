@@ -18,7 +18,7 @@ body a {
 .banner{
   background: url(../images/nsut-img-dec-transp.jpg) no-repeat 0px 0px #eeece9;
   min-height: 755px;
-  background-size: contain;
+  background-size: cover;
   position: relative;
 }
 .head-logo{

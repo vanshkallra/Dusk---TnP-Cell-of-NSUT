@@ -103,7 +103,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="about-bottom">
 		<!-- container -->
 		<div class="container">
-			<h3 class="wow fadeInRight animated" style="visibility: visible;">A New Generation of CUSAT</h3>
+			<h3 class="wow fadeInRight animated" style="visibility: visible;">A New Generation of NSUT</h3>
 			<div class="about-bottom-grids">
 				<div class="col-md-6 about-bottom-left wow fadeInLeft animated animated" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s;">
 					<h4>What We Offer?</h4>
@@ -131,8 +131,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="team-grids">
 					<div class="col-md-3 team-grid wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 						<img src="images/b117.jpg" alt="">
-						<h6>Renumol V.G</h6>
-						<p> HOD IT Department</p>
+						<h6>Name</h6>
+						<p>Designation</p>
 					</div>
 					<div class="col-md-3 team-grid wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 						<img src="images/b10.jpg" alt="">
@@ -146,8 +146,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="col-md-3 team-grid wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 						<img src="images/b119.jpg" alt="">
-						<h6>James Vargese</h6>
-						<p>Placement Incharge</p>
+						<h6>Name</h6>
+						<p>Designation</p>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
@@ -186,8 +186,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-3 footer-middle wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 					<h3>Address</h3>
 					<div class="address">
-						<p>CUSAT, South Kalamessery
-							<span>Kochi, Kerala</span>
+						<p>NSUT, Dwarka Sec-3
+							<span>New Delhi, Delhi</span>
 						</p>
 					</div>
 					<div class="phone">
@@ -195,7 +195,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 				</div>
 				<div class="col-md-3 footer-right  wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-					<h6 style="color: white">Cochin University of Science And Technology</h6>
+					<h6 style="color: white">Netaji Subhas University of Technology</h6>
 					<h4>
 						<a href="../Homepage/index.php" style="color: white">Placement Management System</a>
 					</h4>
@@ -210,8 +210,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- container -->
 			<div class="container">
 				<div class="copyright-left wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-					 <p>Copyright &copy; 2018 CUSAT-SOE | Developed by
-              <a href="http://znumerique.azurewebsites.net" target="_parent">HyperMine Technologies</a>
+					 <p>Copyright &copy; 2024 Dusk
 					</p>
 				</div>
 				<div class="copyright-right wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">

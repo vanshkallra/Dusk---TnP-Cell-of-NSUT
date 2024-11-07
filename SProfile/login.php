@@ -45,7 +45,7 @@
 		  ?>
         </header>
         <div class="profile-photo-container">
-          <img src="images/profile-photo.jpg" alt="Profile Photo" class="img-responsive">
+          <img src="images/Online-sProfile.jpg" alt="Profile Photo" class="img-responsive">
           <div class="profile-photo-overlay"></div>
         </div>
         <!-- Search box -->
@@ -68,6 +68,9 @@
             </li>
             <li>
               <a href="preferences.php"><i class="fa fa-sliders fa-fw"></i>Preferences</a>
+            </li>
+            <li>
+              <a href="student_details.php"><i class="fa fa-sliders fa-fw"></i>Add details</a>
             </li>
             <li>
               <a href="logout.php"><i class="fa fa-eject fa-fw"></i>Sign Out</a>
