@@ -246,9 +246,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li>
 							<a href="about.php">About</a>
 						</li>
-						<li>
+						<!-- <li>
 							<a href="products.php">Campus Drives</a>
-						</li>
+						</li> -->
 						<li>
 							<a href="../Gallery/index.html">Gallery</a>
 						</li>

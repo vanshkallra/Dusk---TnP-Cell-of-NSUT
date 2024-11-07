@@ -201,7 +201,7 @@ header .header-content {
 
 /* by Vansh */
 .header-content-inner{
-    /* background-color: black; */
+    background-color: black;
     opacity: 0.3px;
     padding: 50px;
     border-radius: 25px;
