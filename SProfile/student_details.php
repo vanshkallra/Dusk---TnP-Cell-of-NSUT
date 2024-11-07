@@ -69,13 +69,13 @@
               <a href="login.php"><i class="fa fa-home fa-fw"></i>Dashboard</a>
             </li>
             <li>
-              <a href="#"><i class="fa fa-bar-chart fa-fw"></i>Placement Drives</a>
+              <a href="jobs1.php"><i class="fa fa-bar-chart fa-fw"></i>Apply for Jobs</a>
             </li>
             <li>
               <a href="preferences.php"><i class="fa fa-sliders fa-fw"></i>Preferences</a>
             </li>
             <li>
-              <a href="#" class="active"><i class="fa fa-sliders fa-fw"></i>Add details</a>
+              <a href="#" class="active"><i class="fa fa-sliders fa-fw"></i>Register for Placement</a>
             </li>
             <li>
               <a href="logout.php"><i class="fa fa-eject fa-fw"></i>Sign Out</a>
@@ -107,17 +107,17 @@
         </div>
         <div class="templatemo-content-container">
           <div class="templatemo-content-widget white-bg">
-            <h2 class="margin-bottom-10">Preferences</h2>
+            <h2 class="margin-bottom-10">Student Details</h2>
             <p>Update Your Details</p>
             <form action="stud1.php" class="templatemo-login-form" method="post" enctype="multipart/form-data">
               <div class="row form-group">
                 <div class="col-lg-6 col-md-6 form-group">
                   <label for="inputFirstName">First Name</label>
-                  <input type="text" name="Fname" class="form-control" id="inputFirstName" placeholder="Ram">
+                  <input type="text" name="Fname" class="form-control" id="inputFirstName" placeholder="Vansh">
                 </div>
                 <div class="col-lg-6 col-md-6 form-group">
                   <label for="inputLastName">Last Name</label>
-                  <input type="text"  name="Lname" class="form-control" id="inputLastName" placeholder="Laxman">
+                  <input type="text"  name="Lname" class="form-control" id="inputLastName" placeholder="Kalra">
                 </div>
 
 				<div class="col-lg-6 col-md-6 form-group">

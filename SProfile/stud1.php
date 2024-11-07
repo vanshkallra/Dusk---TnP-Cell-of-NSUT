@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             } elseif (isset($_POST['update'])) {  // Update data
                 // $stmt = $connect->prepare("UPDATE basicdetails SET FirstName=?, LastName=?, Mobile=?, Email=?, DOB=?, Sem=?, Branch=?, SSLC=?, PU/Dip=?, BE=?, Backlogs=?, HofBacklogs=?, DetainYears=?, Approve='0' WHERE USN=?");
 				$stmt = $connect->prepare("UPDATE Student SET FirstName=?, LastName=?, Mobile=?, Email=?, DOB=?, Sem=?, Branch=?, SSLC=?, `PU/Dip`=?, BE=?, Backlogs=? WHERE USN=?");
-                $stmt->bind_param("ssssssssssssss", $fname, $lname, $phno, $email, $date, $cursem, $branch, $per, $puagg, $beaggregate, $back, $USN);
+                $stmt->bind_param("ssssssssssss", $fname, $lname, $phno, $email, $date, $cursem, $branch, $per, $puagg, $beaggregate, $back, $USN);
 
                 if ($stmt->execute()) {
                     echo "<center>Data updated successfully!</center>";
@@ -64,12 +64,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $stmt->close();
             }
         } else {
-            echo "<center>Please enter your USN only.</center>";
+            echo "<center>Please enter your Roll No. only.</center>";
         }
     } else {
-        echo "<center>USN and Email are required.</center>";
+        echo "<center>Roll No. and Email are required.</center>";
     }
 }
 
 $connect->close();
 ?>
+
+<a href="student_details.php" style="display: block; text-align: center; margin: 0 auto;">Go back</a>

@@ -69,13 +69,13 @@
               <a href="login.php"><i class="fa fa-home fa-fw"></i>Dashboard</a>
             </li>
             <li>
-              <a href="#"><i class="fa fa-bar-chart fa-fw"></i>Placement Drives</a>
+              <a href="jobs1.php"><i class="fa fa-bar-chart fa-fw"></i>Apply for Jobs</a>
             </li>
             <li>
               <a href="#" class="active"><i class="fa fa-sliders fa-fw"></i>Preferences</a>
             </li>
             <li>
-              <a href="student_details.php"><i class="fa fa-sliders fa-fw"></i>Add details</a>
+              <a href="student_details.php"><i class="fa fa-sliders fa-fw"></i>Register for Placement</a>
             </li>
             <li>
               <a href="logout.php"><i class="fa fa-eject fa-fw"></i>Sign Out</a>

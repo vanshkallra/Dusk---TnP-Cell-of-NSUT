@@ -1,13 +1,37 @@
 <?php
-  session_start();
-  if($_SESSION["username"]){
+session_start();
+if($_SESSION["username"]){
 
-  }
-   else {
-	  //  header("location: index.php");
-    header("location: tnp-dusk/SProfile/index.php");
-  }
+}
+ else {
+    //  header("location: index.php");
+  header("location: tnp-dusk/SProfile/index.php");
+}
+
+// Database configuration
+$host = 'localhost';
+$user = 'root';
+$pass = '';
+$dbname = 'dbms_project';
+
+// Connect to the database
+$conn = new mysqli($host, $user, $pass, $dbname);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Get companies and jobs
+$query = "SELECT Company.company_id, Company.company_name, Job.job_id, Job.job_title, Job.job_description 
+          FROM Company 
+          JOIN Job ON Company.company_id = Job.company_id";
+$result = $conn->query($query);
+
+// // Get the 'usn' from the session
+// $usn = $_SESSION['USN'];
 ?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +39,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Student Profile Home</title>
+    <title>Available Jobs</title>
     <meta name="description" content="">
     <meta name="author" content="templatemo">
     <!--favicon-->
@@ -31,6 +55,59 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <style>
+        .main-jobs{
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-top: 30px;
+        }
+        h1 {
+            padding: 10px;
+            text-align: center;
+            color: #333;
+            padding-bottom: 30px;
+        }
+        .company {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .company h2 {
+            margin: 0;
+            color: #333;
+            font-size: 1.5em;
+        }
+        .job {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .job p {
+            margin: 0;
+            color: #555;
+            font-size: 1.2em;
+        }
+        .register-button {
+            padding: 8px 16px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        .register-button:hover {
+            background-color: #218838;
+        }
+    </style>
   </head>
 
   <body>
@@ -61,13 +138,13 @@
         <nav class="templatemo-left-nav">
           <ul>
             <li>
-              <a href="#" class="active"><i class="fa fa-home fa-fw"></i>Dashboard</a>
+              <a href="login.php"><i class="fa fa-home fa-fw"></i>Dashboard</a>
             </li>
             <!-- <li>
               <a href="#"><i class="fa fa-bar-chart fa-fw"></i>Placement Drives</a>
             </li> -->
             <li>
-              <a href="jobs1.php"><i class="fa fa-bar-chart fa-fw"></i>Apply for Jobs</a>
+              <a href="#" class="active"><i class="fa fa-bar-chart fa-fw"></i>Apply for Jobs</a>
             </li>
             <li>
               <a href="preferences.php"><i class="fa fa-sliders fa-fw"></i>Preferences</a>
@@ -103,7 +180,41 @@
             </nav>
           </div>
         </div>
-        <div class="templatemo-content-container">
+        <div class="main-jobs">
+            <h1>Available Companies and Jobs</h1>
+
+            <!-- PHP to dynamically generate job listings -->
+            <?php if ($result->num_rows > 0): ?>
+                <?php
+                // Group jobs by company
+                $current_company_id = null;
+                while ($row = $result->fetch_assoc()):
+                    if ($current_company_id != $row['company_id']):
+                        if ($current_company_id != null) echo "</div>";  // Close previous company div
+                        $current_company_id = $row['company_id'];
+                ?>
+                        <div class="company">
+                            <h2><strong>Company Name: </strong><?php echo htmlspecialchars($row['company_name']); ?></h2>
+                    <?php endif; ?>
+                    
+                    <!-- Job for current company -->
+                    <div class="job">
+                        <p><strong>Job Title:</strong> <?php echo htmlspecialchars($row['job_title']); ?></p>
+                        <form method="post" action="jobs_register.php">
+                            <input type="hidden" name="job_id" value="<?php echo $row['job_id']; ?>">
+                        
+                            <button type="submit" name="apply" class="register-button">Apply</button>
+                        </form>
+                    </div>
+
+                <?php endwhile; ?>
+                </div> <!-- Close last company div -->
+            <?php else: ?>
+                <p>No jobs available at the moment.</p>
+            <?php endif; ?>
+        </div>
+        
+        <!-- <div class="templatemo-content-container">
           <div class="templatemo-flex-row flex-content-row">
             <div class="templatemo-content-widget white-bg col-2">
               <i class="fa fa-times"></i>
@@ -226,12 +337,12 @@
               </div>
             </div>
           </div>
-          <!-- Second row ends -->
+          Second row ends
           <footer class="text-right">
             		<p>Copyright &copy; 2024 Dusk
 			  </p>
           </footer>
-        </div>
+        </div> -->
       </div>
     </div>
     <!-- JS -->
@@ -244,3 +355,5 @@
   </body>
 
 </html>
+
+
