@@ -136,4 +136,4 @@ $conn->close();
 ?>
 
 <!-- Redirect back to the job listing page -->
-<a href="jobs2.php">Back to Job Listings</a>
+<a href="jobs1.php">Back to Job Listings</a>

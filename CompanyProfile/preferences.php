@@ -1,12 +1,33 @@
 <?php
   session_start();
   if($_SESSION["username"]){
-    echo "Welcome, ".$_SESSION['username']."!";
   }
    else {
 	   header("location: index.php");
    die("You must be Log in to view this page <a href='index.php'>Click here</a>");}
 
+?>
+
+<?php
+// Database configuration
+$host = 'localhost';    // Database host
+$user = 'root';         // Database username
+$pass = '';             // Database password
+$dbname = 'dbms_project'; // Database name
+
+// Connect to the database
+$conn = new mysqli($host, $user, $pass, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Query to fetch companies
+$company_query = "SELECT company_id, company_name FROM Company";
+$company_result = $conn->query($company_query);
+
+$conn->close();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +42,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Add Student Details</title>
+    <title>List Jobs</title>
     <meta name="description" content="">
     <meta name="author" content="templatemo">
 
@@ -35,6 +56,20 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <style>
+      .form-container{
+        padding: 60px;
+      }
+      /* .form-container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        } */
+    </style>
   </head>
 
   <body>
@@ -49,10 +84,10 @@
           echo "<h1>" . $Welcome . "<br>". $_SESSION['username']. "</h1>";
 		  ?>
         </header>
-        <div class="profile-photo-container">
-          <img src="images/Online-sProfile.jpg" alt="Profile Photo" class="img-responsive">
+        <!-- <div class="profile-photo-container">
+          <img src="images/company_logo.png" alt="Profile Photo" class="img-responsive">
           <div class="profile-photo-overlay"></div>
-        </div>
+        </div> -->
         <!-- Search box -->
         <form class="templatemo-search-form" role="search">
           <div class="input-group">
@@ -69,13 +104,13 @@
               <a href="login.php"><i class="fa fa-home fa-fw"></i>Dashboard</a>
             </li>
             <li>
-              <a href="jobs2.php"><i class="fa fa-bar-chart fa-fw"></i>Apply for Jobs</a>
+              <a href="show_apps_extra.php"><i class="fa fa-bar-chart fa-fw"></i>Show Applicants</a>
             </li>
             <li>
-              <a href="applied_jobs.php"><i class="fa fa-sliders fa-fw"></i>Applied Jobs</a>
+              <a href="#" class="active"><i class="fa fa-sliders fa-fw"></i>List Jobs</a>
             </li>
             <li>
-              <a href="#" class="active"><i class="fa fa-sliders fa-fw"></i>Register for Placement</a>
+              <a href="company_details.php" ><i class="fa fa-sliders fa-fw"></i>Add Company details</a>
             </li>
             <li>
               <a href="logout.php"><i class="fa fa-eject fa-fw"></i>Sign Out</a>
@@ -83,6 +118,7 @@
           </ul>
         </nav>
       </div>
+      
       <!-- Main content -->
       <div class="templatemo-content col-1 light-gray-bg">
         <div class="templatemo-top-nav-container">
@@ -105,37 +141,73 @@
             </nav>
           </div>
         </div>
-        <div class="templatemo-content-container">
+    <div class="form-container">
+          <h2>Add Job Details</h2>
+          <br>
+          <form action="list_jobs1.php" method="POST">
+              <div class="form-group">
+                  <label for="company_id">Company:</label>
+                  <select name="company_id" id="company_id" class="form-control" required>
+                      <option value="">Select a company</option>
+                      <?php
+                      // Populate dropdown with companies
+                      if ($company_result->num_rows > 0) {
+                          while ($row = $company_result->fetch_assoc()) {
+                              echo "<option value='" . $row['company_id'] . "'>" . $row['company_name'] . "</option>";
+                          }
+                      }
+                      ?>
+                  </select>
+              </div>
+              <div class="form-group">
+                  <label for="job_title">Job Title:</label>
+                  <input type="text" name="job_title" id="job_title" class="form-control" required>
+              </div>
+              <div class="form-group">
+                  <label for="job_description">Job Description:</label>
+                  <textarea name="job_description" id="job_description" class="form-control" required></textarea>
+              </div>
+              <div class="form-group">
+                  <label for="requirements">Requirements:</label>
+                  <textarea name="requirements" id="requirements" class="form-control" required></textarea>
+              </div>
+              <div class="form-group">
+                  <label for="salary">Salary:</label>
+                  <input type="number" name="salary" id="salary" class="form-control" required>
+              </div>
+              <div class="form-group">
+                  <label for="location">Location:</label>
+                  <input type="text" name="location" id="location" class="form-control" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Add Job</button>
+          </form>
+      </div>
+        <!-- <div class="templatemo-content-container">
           <div class="templatemo-content-widget white-bg">
-            <h2 class="margin-bottom-10">Student Details</h2>
+            <h2 class="margin-bottom-10">Company Details</h2>
             <p>Update Your Details</p>
-            <form action="stud1.php" class="templatemo-login-form" method="post" enctype="multipart/form-data">
+            <form action="comp1.php" class="templatemo-login-form" method="post" enctype="multipart/form-data">
               <div class="row form-group">
                 <div class="col-lg-6 col-md-6 form-group">
-                  <label for="inputFirstName">First Name</label>
-                  <input type="text" name="Fname" class="form-control" id="inputFirstName" placeholder="Vansh">
+                  <label for="inputFirstName">Company Name</label>
+                  <input type="text" name="Fname" class="form-control" id="inputFirstName" placeholder="ABC">
                 </div>
                 <div class="col-lg-6 col-md-6 form-group">
                   <label for="inputLastName">Last Name</label>
                   <input type="text"  name="Lname" class="form-control" id="inputLastName" placeholder="Kalra">
+                </div> -->
+
+				<!-- <div class="col-lg-6 col-md-6 form-group">
+                  <label for="usn">Username *</label>
+                  <input type="text" name="USN" class="form-control" id="usn" placeholder="technosol" >
                 </div>
 
-				<div class="col-lg-6 col-md-6 form-group">
-                  <label for="usn">Roll No.</label>
-                  <input type="text" name="USN" class="form-control" id="usn" placeholder="2023UCM2372" >
-                </div>
-
-				<div class="col-lg-6 col-md-6 form-group">
+			 <div class="col-lg-6 col-md-6 form-group">
                   <label for="Phone">Phone:</label>
                   <input type="text" name="Num" class="form-control" id="Phone" placeholder="91xxxxxxxx">
-                </div>
+                </div> -->
 
-				 <div class="col-lg-6 col-md-6 form-group">
-                  <label for="Email">Email</label>
-                  <input type="Email" name="Email" class="form-control" id="Email" placeholder="abc@example.com">
-                </div>
-
-                <div class="col-lg-6 col-md-6 form-group">
+                <!-- <div class="col-lg-6 col-md-6 form-group">
                   <label for="DOB">Date of Birth</label>
                   <input type="date" name="DOB" class="form-control" id="DOB" placeholder="DD/MM/YYYY">
                 </div>
@@ -194,7 +266,7 @@
                     <option value="7">7</option>
                     <option value="8">8</option>
                   </select>
-                </div>
+                </div> -->
 				<!-- <div class="col-lg-6 col-md-6 form-group">
                   <label class="control-label templatemo-block">History of Backlogs</label>
                   <select name="History" class="form-control">
@@ -215,25 +287,7 @@
                   </select>
                 </div> -->
 
-              </div>
-              </div>
-              <div class="row form-group">
-                <div class="col-lg-12">
-                  <label class="control-label templatemo-block">Upload your Profile Pic</label>
-                  <!-- <input type="file" name="fileToUpload" id="fileToUpload" class="margin-bottom-10"> -->
-                  <input type="file" name="fileToUpload" id="fileToUpload" class="filestyle" data-buttonName="btn-primary" data-buttonBefore="true"
-                  data-icon="false">
-                  <p>Maximum upload size is 5 MB.</p>
-                </div>
-              </div>
-              <div class="form-group text-right">
-
-				<button type="submit"  name="submit" class="templatemo-blue-button">add</button>
-				<button type="submit"  name="update" class="templatemo-blue-button">update</button>
-                <button type="reset" class="templatemo-white-button">Reset</button>
-              </div>
-            </form>
-          </div>
+               
           <footer class="text-right">
            		<p>Copyright &copy; 2024 Dusk
 			  </p>
@@ -251,3 +305,86 @@
   </body>
 
 </html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Job</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .form-container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<?php
+// // Database configuration
+// $host = 'localhost';    // Database host
+// $user = 'root';         // Database username
+// $pass = '';             // Database password
+// $dbname = 'dbms_project'; // Database name
+
+// // Connect to the database
+// $conn = new mysqli($host, $user, $pass, $dbname);
+
+// // Check connection
+// if ($conn->connect_error) {
+//     die("Connection failed: " . $conn->connect_error);
+// }
+
+// // Query to fetch companies
+// $company_query = "SELECT company_id, company_name FROM Company";
+// $company_result = $conn->query($company_query);
+
+// $conn->close();
+?>
+
+<div class="form-container">
+    <h2>Add Job Details</h2>
+    <form action="list_jobs1.php" method="POST">
+        <div class="form-group">
+            <label for="company_id">Company:</label>
+            <select name="company_id" id="company_id" class="form-control" required>
+                <option value="">Select a company</option>
+                <?php
+                // // Populate dropdown with companies
+                // if ($company_result->num_rows > 0) {
+                //     while ($row = $company_result->fetch_assoc()) {
+                //         echo "<option value='" . $row['company_id'] . "'>" . $row['company_name'] . "</option>";
+                //     }
+                // }
+                ?>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="job_title">Job Title:</label>
+            <input type="text" name="job_title" id="job_title" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="job_description">Job Description:</label>
+            <textarea name="job_description" id="job_description" class="form-control" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="requirements">Requirements:</label>
+            <textarea name="requirements" id="requirements" class="form-control" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="salary">Salary:</label>
+            <input type="number" name="salary" id="salary" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Job</button>
+    </form>
+</div>
+
+</body>
+</html> -->

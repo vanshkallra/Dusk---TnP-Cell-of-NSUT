@@ -1,7 +1,7 @@
 <?php
   session_start();
   if($_SESSION["username"]){
-    echo "Welcome, ".$_SESSION['username']."!";
+
   }
    else {
 	   header("location: index.php");
@@ -21,7 +21,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Add Student Details</title>
+    <title>Preferences</title>
     <meta name="description" content="">
     <meta name="author" content="templatemo">
 
@@ -49,10 +49,10 @@
           echo "<h1>" . $Welcome . "<br>". $_SESSION['username']. "</h1>";
 		  ?>
         </header>
-        <div class="profile-photo-container">
-          <img src="images/Online-sProfile.jpg" alt="Profile Photo" class="img-responsive">
+        <!-- <div class="profile-photo-container">
+          <img src="images/company_logo.png" alt="Profile Photo" class="img-responsive">
           <div class="profile-photo-overlay"></div>
-        </div>
+        </div> -->
         <!-- Search box -->
         <form class="templatemo-search-form" role="search">
           <div class="input-group">
@@ -69,13 +69,13 @@
               <a href="login.php"><i class="fa fa-home fa-fw"></i>Dashboard</a>
             </li>
             <li>
-              <a href="jobs2.php"><i class="fa fa-bar-chart fa-fw"></i>Apply for Jobs</a>
+              <a href="show_apps_extra.php"><i class="fa fa-bar-chart fa-fw"></i>Show Applicants</a>
             </li>
             <li>
-              <a href="applied_jobs.php"><i class="fa fa-sliders fa-fw"></i>Applied Jobs</a>
+              <a href="preferences.php"><i class="fa fa-sliders fa-fw"></i>List Jobs</a>
             </li>
             <li>
-              <a href="#" class="active"><i class="fa fa-sliders fa-fw"></i>Register for Placement</a>
+              <a href="#" class="active"><i class="fa fa-sliders fa-fw"></i>Add Company details</a>
             </li>
             <li>
               <a href="logout.php"><i class="fa fa-eject fa-fw"></i>Sign Out</a>
@@ -107,35 +107,50 @@
         </div>
         <div class="templatemo-content-container">
           <div class="templatemo-content-widget white-bg">
-            <h2 class="margin-bottom-10">Student Details</h2>
+            <h2 class="margin-bottom-10">Company Details</h2>
             <p>Update Your Details</p>
-            <form action="stud1.php" class="templatemo-login-form" method="post" enctype="multipart/form-data">
+            <form action="comp1.php" class="templatemo-login-form" method="post" enctype="multipart/form-data">
               <div class="row form-group">
                 <div class="col-lg-6 col-md-6 form-group">
-                  <label for="inputFirstName">First Name</label>
-                  <input type="text" name="Fname" class="form-control" id="inputFirstName" placeholder="Vansh">
+                  <label for="inputFirstName">Company Name</label>
+                  <input type="text" name="Fname" class="form-control" id="inputFirstName" placeholder="ABC">
                 </div>
-                <div class="col-lg-6 col-md-6 form-group">
+                <!-- <div class="col-lg-6 col-md-6 form-group">
                   <label for="inputLastName">Last Name</label>
                   <input type="text"  name="Lname" class="form-control" id="inputLastName" placeholder="Kalra">
-                </div>
+                </div> -->
 
 				<div class="col-lg-6 col-md-6 form-group">
-                  <label for="usn">Roll No.</label>
-                  <input type="text" name="USN" class="form-control" id="usn" placeholder="2023UCM2372" >
+                  <label for="usn">Username *</label>
+                  <input type="text" name="USN" class="form-control" id="usn" placeholder="technosol" >
                 </div>
 
-				<div class="col-lg-6 col-md-6 form-group">
+				<!-- <div class="col-lg-6 col-md-6 form-group">
                   <label for="Phone">Phone:</label>
                   <input type="text" name="Num" class="form-control" id="Phone" placeholder="91xxxxxxxx">
-                </div>
+                </div> -->
 
 				 <div class="col-lg-6 col-md-6 form-group">
-                  <label for="Email">Email</label>
+                  <label for="Email">Email *</label>
                   <input type="Email" name="Email" class="form-control" id="Email" placeholder="abc@example.com">
                 </div>
 
                 <div class="col-lg-6 col-md-6 form-group">
+                  <label for="inputFirstName">Industry</label>
+                  <input type="text" name="industry" class="form-control" id="industry" placeholder="Tech">
+                </div>
+
+                <div class="col-lg-6 col-md-6 form-group">
+                  <label for="inputFirstName">Location</label>
+                  <input type="text" name="location" class="form-control" id="location" placeholder="New Delhi">
+                </div>
+
+                <div class="col-lg-6 col-md-6 form-group">
+                  <label for="inputFirstName">Contact Person</label>
+                  <input type="text" name="contact_person" class="form-control" id="contact_person" placeholder="Jack">
+                </div>
+
+                <!-- <div class="col-lg-6 col-md-6 form-group">
                   <label for="DOB">Date of Birth</label>
                   <input type="date" name="DOB" class="form-control" id="DOB" placeholder="DD/MM/YYYY">
                 </div>
@@ -194,7 +209,7 @@
                     <option value="7">7</option>
                     <option value="8">8</option>
                   </select>
-                </div>
+                </div> -->
 				<!-- <div class="col-lg-6 col-md-6 form-group">
                   <label class="control-label templatemo-block">History of Backlogs</label>
                   <select name="History" class="form-control">

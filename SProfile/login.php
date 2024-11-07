@@ -67,10 +67,10 @@
               <a href="#"><i class="fa fa-bar-chart fa-fw"></i>Placement Drives</a>
             </li> -->
             <li>
-              <a href="jobs1.php"><i class="fa fa-bar-chart fa-fw"></i>Apply for Jobs</a>
+              <a href="jobs2.php"><i class="fa fa-bar-chart fa-fw"></i>Apply for Jobs</a>
             </li>
             <li>
-              <a href="preferences.php"><i class="fa fa-sliders fa-fw"></i>Preferences</a>
+              <a href="applied_jobs.php"><i class="fa fa-sliders fa-fw"></i>Applied Jobs</a>
             </li>
             <li>
               <a href="student_details.php"><i class="fa fa-sliders fa-fw"></i>Register for Placement</a>

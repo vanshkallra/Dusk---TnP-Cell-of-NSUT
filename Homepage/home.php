@@ -53,14 +53,14 @@
                         <li>
                             <a class="page-scroll" href="../SProfile/index.php">Student Login</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a class="page-scroll" href="../HODProfile/index.php">HOD Login</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="../PProfile/index.php">Placement Login</a>
-                        </li>
+                        </li> -->
                         <li>
-                            <a class="page-scroll" href="../PriProfile/index.php">Administrative Login</a>
+                            <a class="page-scroll" href="../CompanyProfile/index.php">Company Login</a>
                         </li>
                     </ul>
 
@@ -99,7 +99,7 @@
 							<a href="../HODProfile/index.php">HOD Login</a>
 						</li>
 						<li>
-							<a href="../Priprofile/index.php">Administrative Login</a>
+							<a href="../CompanyProfile/index.php">Administrative Login</a>
 						</li>
 					</ul>
 				</div>

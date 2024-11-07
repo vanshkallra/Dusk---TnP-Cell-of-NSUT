@@ -1,35 +1,61 @@
+
 <?php
 session_start();
-if($_SESSION["username"]){
 
-}
- else {
-    //  header("location: index.php");
-  header("location: tnp-dusk/SProfile/index.php");
-}
+// Check if the student is logged in
+// if (!isset($_SESSION['USN'])) {
+//     die("You must be logged in to view your applied jobs.");
+// }
+
+// Fetch USN from session
+$usn = $_SESSION['username'];
+
 
 // Database configuration
-$host = 'localhost';
-$user = 'root';
-$pass = '';
-$dbname = 'dbms_project';
+$host = 'localhost';    // Database host
+$user = 'root';         // Database username
+$pass = '';             // Database password
+$dbname = 'dbms_project'; // Database name
 
 // Connect to the database
 $conn = new mysqli($host, $user, $pass, $dbname);
+
+// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$query = "SELECT Company.company_name, Company.location, Job.job_title, Job.job_description, Job.requirements, Job.salary, Job.job_id 
-          FROM Company 
-          INNER JOIN Job ON Company.company_id = Job.company_id";
-$result = $conn->query($query);
+// Query to fetch student_id from the Student table based on USN
+$student_query = "SELECT student_id FROM Student WHERE usn = ?";
+$stmt = $conn->prepare($student_query);
+$stmt->bind_param('s', $usn);
+$stmt->execute();
+$stmt->store_result();
 
-// // Get the 'usn' from the session
-// $usn = $_SESSION['USN'];
+// Check if the student exists
+if ($stmt->num_rows > 0) {
+    // Get the student_id
+    $stmt->bind_result($student_id);
+    $stmt->fetch();
+
+    // Now fetch all jobs the student has applied to, including company details
+    $query = "
+        SELECT c.company_name, j.job_title, j.job_description, j.requirements, j.salary, j.location
+        FROM Application a
+        JOIN Job j ON a.job_id = j.job_id
+        JOIN Company c ON j.company_id = c.company_id
+        WHERE a.student_id = ?
+    ";
+
+    $stmt->close();
+    $stmt = $conn->prepare($query);
+    $stmt->bind_param('i', $student_id);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    
+    
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -116,12 +142,13 @@ $result = $conn->query($query);
         }
         /* Hover effect */
         .job-card:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
         /* Center the title */
         h2,h1 {
             margin-top: 20px;
             font-weight: bold;
+            text-align: center;
         }
         .card-title{
           margin-botom: 15px;
@@ -173,10 +200,10 @@ $result = $conn->query($query);
               <a href="#"><i class="fa fa-bar-chart fa-fw"></i>Placement Drives</a>
             </li> -->
             <li>
-              <a href="#" class="active"><i class="fa fa-bar-chart fa-fw"></i>Apply for Jobs</a>
+              <a href="jobs2.php" ><i class="fa fa-bar-chart fa-fw"></i>Apply for Jobs</a>
             </li>
             <li>
-              <a href="applied_jobs.php"><i class="fa fa-sliders fa-fw"></i>Applied Jobs</a>
+              <a href="#.php" class="active"><i class="fa fa-sliders fa-fw"></i>Applied Jobs</a>
             </li>
             <li>
               <a href="student_details.php"><i class="fa fa-sliders fa-fw"></i>Register for Placement</a>
@@ -209,45 +236,57 @@ $result = $conn->query($query);
             </nav>
           </div>
         </div>
-
-        <div class="container">
-        <h1 class="text-center">Available Companies and Jobs</h1>
-        <div class="row">
-            <?php
+        <?php
+            // Check if the student has applied to any jobs
             if ($result->num_rows > 0) {
+                echo "<h1>Applied Jobs</h1>";
+                echo "<div class='container'>";
                 while ($row = $result->fetch_assoc()) {
-                    echo '<div class="col-md-4">';
-                    echo '<div class="job-card">';
-                    echo '<h3 class="card-title text-center">' . htmlspecialchars($row['company_name']) . '</h3>';
-                    echo '<p class="card-text"><strong>Location:</strong> ' . htmlspecialchars($row['location']) . '</p>';
-                    echo '<p class="card-text"><strong>Job Title:</strong> ' . htmlspecialchars($row['job_title']) . '</p>';
-                    echo '<p class="card-text"><strong>Description:</strong> ' . htmlspecialchars($row['job_description']) . '</p>';
-                    echo '<p class="card-text"><strong>Requirements:</strong> ' . htmlspecialchars($row['requirements']) . '</p>';
-                    echo '<p class="card-text"><strong>Salary:</strong> $' . htmlspecialchars($row['salary']) . '</p>';
-                    echo '<form method="POST" action="jobs_register.php">';
-                    echo '<input type="hidden" name="job_id" value="' . $row['job_id'] . '">';
-                    echo '<button type="submit" class="btn btn-primary">Register</button>';
-                    echo '</form>';
-                    echo '</div>';
-                    echo '</div>';
+                    echo "<div class='job-box'>";
+                    echo "<h3>" . $row['company_name'] . "</h3>";
+                    echo "<p><strong>Job Title:</strong> " . $row['job_title'] . "</p>";
+                    echo "<p><strong>Job Description:</strong> " . $row['job_description'] . "</p>";
+                    echo "<p><strong>Requirements:</strong> " . $row['requirements'] . "</p>";
+                    echo "<p><strong>Salary:</strong> " . $row['salary'] . "</p>";
+                    echo "<p><strong>Location:</strong> " . $row['location'] . "</p>";
+                    echo "</div>";
                 }
+                echo "</div>";
             } else {
-                echo '<p class="text-center">No jobs available at the moment.</p>';
+                echo "<p>You have not applied to any jobs yet.</p>";
             }
-            ?>
-        </div>
-    </div>
+        
+            $stmt->close();
+        } else {
+            echo "No student found with that USN.";
+        }
+        
+        $conn->close();
+        ?>
 
-      </div>
-    </div>
-    <!-- JS -->
-    <script src="js/jquery-1.11.2.min.js"></script>
-    <!-- jQuery -->
-    <script src="js/jquery-migrate-1.2.1.min.js"></script>
-    <!-- jQuery Migrate Plugin -->
-    <script type="text/javascript" src="js/templatemo-script.js"></script>
-    <!-- Templatemo Script -->
-  </body>
+<style>
+    .container {
+        width: 80%;
+        margin: auto;
+    }
 
-</html>
+    .job-box {
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
+    .job-box h3 {
+        text-align: center;
+    }
+
+    .job-box p {
+        font-size: 14px;
+    }
+
+    .job-box strong {
+        font-weight: bold;
+    }
+</style>

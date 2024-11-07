@@ -121,10 +121,10 @@ $result = $conn->query($query);
           echo "<h1>" . $Welcome . "<br>". $_SESSION['username']. "</h1>";
 		  ?>
         </header>
-        <div class="profile-photo-container">
+        <!-- <div class="profile-photo-container">
           <img src="images/Online-sProfile.jpg" alt="Profile Photo" class="img-responsive">
           <div class="profile-photo-overlay"></div>
-        </div>
+        </div> -->
         <!-- Search box -->
         <form class="templatemo-search-form" role="search">
           <div class="input-group">
@@ -147,10 +147,10 @@ $result = $conn->query($query);
               <a href="#" class="active"><i class="fa fa-bar-chart fa-fw"></i>Apply for Jobs</a>
             </li>
             <li>
-              <a href="applied_jobs.php"><i class="fa fa-sliders fa-fw"></i>Applied Jobs</a>
+              <a href="preferences.php"><i class="fa fa-sliders fa-fw"></i>Preferences</a>
             </li>
             <li>
-              <a href="student_details.php"><i class="fa fa-sliders fa-fw"></i>Register for Placement</a>
+              <a href="company_details.php"><i class="fa fa-sliders fa-fw"></i>Add Company Details</a>
             </li>
             <li>
               <a href="logout.php"><i class="fa fa-eject fa-fw"></i>Sign Out</a>
@@ -355,5 +355,73 @@ $result = $conn->query($query);
   </body>
 
 </html>
+
+
+<?php
+session_start();
+$host = 'localhost';
+$user = 'root';
+$pass = '';
+$dbname = 'your_db_name';
+
+$conn = new mysqli($host, $user, $pass, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Fetch companies and their job details
+$query = "SELECT Company.company_name, Company.location, Job.job_title, Job.job_description, Job.requirements, Job.salary, Job.job_id 
+          FROM Company 
+          INNER JOIN Job ON Company.company_id = Job.company_id";
+
+$result = $conn->query($query);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Company Jobs</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Available Jobs</h2>
+        <div class="row">
+            <?php
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    echo '<div class="col-md-4">';
+                    echo '<div class="card mb-3">';
+                    echo '<div class="card-body">';
+                    echo '<h5 class="card-title">' . htmlspecialchars($row['company_name']) . '</h5>';
+                    echo '<p class="card-text"><strong>Location:</strong> ' . htmlspecialchars($row['location']) . '</p>';
+                    echo '<p class="card-text"><strong>Job Title:</strong> ' . htmlspecialchars($row['job_title']) . '</p>';
+                    echo '<p class="card-text"><strong>Description:</strong> ' . htmlspecialchars($row['job_description']) . '</p>';
+                    echo '<p class="card-text"><strong>Requirements:</strong> ' . htmlspecialchars($row['requirements']) . '</p>';
+                    echo '<p class="card-text"><strong>Salary:</strong> $' . htmlspecialchars($row['salary']) . '</p>';
+                    echo '<form method="POST" action="jobs_register.php">';
+                    echo '<input type="hidden" name="job_id" value="' . $row['job_id'] . '">';
+                    echo '<button type="submit" class="btn btn-primary">Register</button>';
+                    echo '</form>';
+                    echo '</div>';
+                    echo '</div>';
+                    echo '</div>';
+                }
+            } else {
+                echo '<p class="text-center">No jobs available at the moment.</p>';
+            }
+            ?>
+        </div>
+    </div>
+</body>
+</html>
+
+<?php
+$conn->close();
+?>
+
+
 
 
