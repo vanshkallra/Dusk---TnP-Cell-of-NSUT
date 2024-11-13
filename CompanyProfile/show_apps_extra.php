@@ -134,7 +134,8 @@ $applicants_stmt->bind_result($application_id, $FirstName, $LastName, $student_u
             text-align: center;
             font-size: 1.8em;
             color: #333;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            margin-top: 20px;
         }
 
         /* Message styles */

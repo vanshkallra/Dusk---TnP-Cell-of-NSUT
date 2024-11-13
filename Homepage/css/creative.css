@@ -198,6 +198,10 @@ header .header-content {
     text-align: center;
 }
 
+.footer-margin{
+    margin-right: 100px;
+}
+
 
 /* by Vansh */
 .header-content-inner{

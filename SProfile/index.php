@@ -47,12 +47,12 @@
 		              	<input type="password" class="form-control" placeholder="******" name="password">           
 		          	</div>	
 	        	</div>	          	
-	          	<div class="form-group">
+	          	<!-- <div class="form-group">
 				    <div class="checkbox squaredTwo">
 				        <input type="checkbox" id="c1" name="cc" />
 						<label for="c1"><span></span>Remember me</label>
 				    </div>				    
-				</div>
+				</div> -->
 				<div class="form-group">
 					<button type="submit" class="templatemo-blue-button width-100">Login</button>
 				</div>
@@ -62,10 +62,10 @@
 		<div class="templatemo-content-widget templatemo-login-widget templatemo-register-widget white-bg">
 			<p>Not a registered user yet? <strong><a href="register.php" class="blue-text">Sign up now!</a></strong></p>
 		</div>
-        <div class="templatemo-content-widget templatemo-login-widget templatemo-register-widget white-bg">
+        <!-- <div class="templatemo-content-widget templatemo-login-widget templatemo-register-widget white-bg">
 			<p>Can't Access Account? <strong><a href="Forgot Password.php" class="blue-text">Reset Password!</a></strong></p>
 
-		</div>
+		</div> -->
 		<a href="../homepage/home.php" style="display: block; text-align: center; margin: 0 auto; font-size: 20px;">Home</a>
 		<!-- <div class="footer">
 			<div class="container">

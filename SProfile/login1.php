@@ -21,7 +21,7 @@
 				$dbpassword = $row['PASSWORD'];
 
 			}
-			if ($username==$dbusername&& $password==$dbpassword)
+			if ($username==$dbusername && $password==$dbpassword)
 			{
 				  echo "<center>Login Successful..!! <br/>Redirecting you to HomePage! </br>If not Go to <a href='index.php'> Here </a></center>";
 			  echo "<meta http-equiv='refresh' content ='3; url=index.php'>";

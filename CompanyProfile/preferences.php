@@ -1,6 +1,10 @@
 <?php
   session_start();
+  ini_set('display_errors', 1);
+  error_reporting(E_ALL);
+  
   if($_SESSION["username"]){
+
   }
    else {
 	   header("location: index.php");
@@ -23,9 +27,24 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Query to fetch companies
-$company_query = "SELECT company_id, company_name FROM Company";
-$company_result = $conn->query($company_query);
+// // Query to fetch companies
+// $company_query = "SELECT company_id, company_name FROM Company";
+// $company_result = $conn->query($company_query);
+
+$usn = $_SESSION['username'];
+
+// Query to fetch the company name using the USN
+$query = "SELECT company_name FROM Company WHERE usn = ?";
+$stmt = $conn->prepare($query);
+$stmt->bind_param('s', $usn);
+$stmt->execute();
+$stmt->bind_result($company_name);
+$stmt->fetch();
+$stmt->close();
+
+// echo "USN from session: $usn <br>";
+// echo "Company Name from query: " . htmlspecialchars($company_name ?? "N/A") . "<br>";
+
 
 $conn->close();
 ?>
@@ -69,6 +88,10 @@ $conn->close();
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         } */
+
+        .form-group{
+          font-size: 18px;
+        }
     </style>
   </head>
 
@@ -142,7 +165,46 @@ $conn->close();
           </div>
         </div>
     <div class="form-container">
-          <h2>Add Job Details</h2>
+      <!-- Company Name Heading -->
+    <h2 class="">Add Job</h2>
+    <hr>
+    
+    <form action="list_jobs1.php" method="POST">
+        <!-- Display Company Name at the top of the form -->
+        <div class="form-group">
+            <!-- <label><strong>Company Name:</strong> <?php echo htmlspecialchars($company_name); ?></label> -->
+            <label><strong>Company Name: </strong> </label> <label style="font-weight: 500"><?php echo htmlspecialchars($company_name ?? "N/A"); ?></label>
+
+        </div>
+
+        <!-- Job Title Input -->
+        <div class="form-group">
+            <label for="job_title">Job Title:</label>
+            <input type="text" name="job_title" id="job_title" class="form-control" required>
+        </div>
+
+        <!-- Job Description Input -->
+        <div class="form-group">
+            <label for="job_description">Job Description:</label>
+            <textarea name="job_description" id="job_description" class="form-control" required></textarea>
+        </div>
+
+        <!-- Requirements Input -->
+        <div class="form-group">
+            <label for="requirements">Requirements:</label>
+            <textarea name="requirements" id="requirements" class="form-control" required></textarea>
+        </div>
+
+        <!-- Salary Input -->
+        <div class="form-group">
+            <label for="salary">Salary:</label>
+            <input type="number" name="salary" id="salary" class="form-control" required>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">Add Job</button>
+    </form>
+          <!-- <h2>Add Job Details</h2>
           <br>
           <form action="list_jobs1.php" method="POST">
               <div class="form-group">
@@ -151,11 +213,11 @@ $conn->close();
                       <option value="">Select a company</option>
                       <?php
                       // Populate dropdown with companies
-                      if ($company_result->num_rows > 0) {
-                          while ($row = $company_result->fetch_assoc()) {
-                              echo "<option value='" . $row['company_id'] . "'>" . $row['company_name'] . "</option>";
-                          }
-                      }
+                      // if ($company_result->num_rows > 0) {
+                      //     while ($row = $company_result->fetch_assoc()) {
+                      //         echo "<option value='" . $row['company_id'] . "'>" . $row['company_name'] . "</option>";
+                      //     }
+                      // }
                       ?>
                   </select>
               </div>
@@ -180,7 +242,7 @@ $conn->close();
                   <input type="text" name="location" id="location" class="form-control" required>
               </div>
               <button type="submit" class="btn btn-primary">Add Job</button>
-          </form>
+          </form> -->
       </div>
         <!-- <div class="templatemo-content-container">
           <div class="templatemo-content-widget white-bg">
