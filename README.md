@@ -9,7 +9,7 @@ Dusk is a placement management system designed to streamline the campus recruitm
 - User-friendly registration and login system
 - Profile management and resume uploads
 - Job application tracking
-- Notification system for placement drives
+- Centralized portal to see all listed jobs
 
 ### For Companies
 - Company profile management
@@ -53,16 +53,6 @@ Dusk is a placement management system designed to streamline the campus recruitm
    - **HOD**: `HODProfile/index.php`
    - **Administrative**: `PriProfile/index.php`
 
-## Screenshots
-
-![Student Dashboard](screenshort_MINi_project/student_dashboard.jpg)
-*Student Dashboard Interface*
-
-![Company Profile](screenshort_MINi_project/company_profile.jpg)
-*Company Profile Management Screen*
-
-![Placement Cell Dashboard](screenshort_MINi_project/placement_dashboard.jpg)
-*Placement Officer Dashboard*
 
 ## Directory Structure
 
