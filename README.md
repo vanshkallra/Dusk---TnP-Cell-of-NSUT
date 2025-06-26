@@ -29,7 +29,7 @@ Dusk is a placement management system designed to streamline the campus recruitm
 - Report generation
 
 ## Technology Stack
-- **Frontend**: HTML, CSS, Bootstrap, JavaScript
+- **Frontend**: HTML, CSS, JavaScript
 - **Backend**: PHP
 - **Database**: MySQL
 
